@@ -1,2 +1,2 @@
 # My Fitbit app...
-Messing around with the fitbit API
+Messing around with the fitbit API. Python, Oauth2, React
