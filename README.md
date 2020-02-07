@@ -1,2 +1,2 @@
-# fitbit-stuff
+# My Fitbit app...
 Messing around with the fitbit API
