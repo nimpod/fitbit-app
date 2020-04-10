@@ -228,18 +228,18 @@ def get_persons_daily_data(start_date, end_date, client_id, client_secret):
     REFRESH_TOKEN = str(server.fitbit.client.session.token['refresh_token'])
     auth2_client = fitbit.Fitbit(CLIENT_ID, CLIENT_SECRET, oauth2=True, access_token=ACCESS_TOKEN, refresh_token=REFRESH_TOKEN)
 
-    filename_dailydata = 'fitbit/exports/daily-data.csv'
+    filename_dailydata = 'exports/daily-data.csv'
 
     daily_data_df = get_daily_data(auth2_client, start_date, end_date)
-    export_dataframe_to_csv(filename_dailydata, daily_data_transposed)
+    export_dataframe_to_csv(filename_dailydata, daily_data_df)
 
 
 #get_persons_weekly_data(datetime.date(2017, 6, 14), client_id='22B9W5', client_secret='7eab3ffe04c07a91f3cbda213a3c0433')
 #get_persons_weekly_data(datetime.date(2017, 7, 4), client_id='22B9VL', client_secret='899aeed7920e3fbb1b77dd5a0449660a')
 
 get_persons_daily_data(
-    start_date=datetime.date(year=2020, month=1, day=1),
-    end_date=datetime.date(year=2020, month=2, day=1),
+    start_date=datetime.date(year=2020, month=3, day=28),
+    end_date=datetime.date(year=2020, month=4, day=2),
     client_id='22B9W5',
     client_secret='7eab3ffe04c07a91f3cbda213a3c0433'
 )
