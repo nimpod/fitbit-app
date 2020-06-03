@@ -1,0 +1,4 @@
+https://app.flourish.studio/visualisation/1065441/edit
+https://towardsdatascience.com/collect-your-own-fitbit-data-with-python-ff145fa10873
+https://thispointer.com/python-how-to-convert-datetime-object-to-string-using-datetime-strftime/
+https://www.journaldev.com/23365/python-string-to-datetime-strptime
